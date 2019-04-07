@@ -8,7 +8,7 @@ $url = "http://simonenko.su";
 //$url = "https://wiki.pwodev.com";
 
 $parser = new Urlparser();
-$parser->parse($url, true, ALL, 2, false);
+$parser->parse($url, true, ALL, 0, true);
 
 echo '<br>Done!<br>';
 echo 'Всего: ' . count($parser->links) . '<br>';

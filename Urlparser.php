@@ -47,6 +47,7 @@ class Urlparser
         $this->root = $parts['scheme'] . '://' . $parts['host'];
         $this->unique_links[$url] = 1;
         $this->worker($url);
+
         if ($save_to_db) {
             $this->saveToDB(true);
         }
